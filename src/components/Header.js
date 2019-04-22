@@ -54,17 +54,17 @@ const Header = ({ siteTitle, langs }) => {
                 </Link>
               </li>
               <li>
-                <Link to="/about/team">
+                <Link to="/team">
                   <FormattedMessage id="menu.about.team" />
                 </Link>
               </li>
               <li>
-                <Link to="/about/join">
+                <Link to="/join">
                   <FormattedMessage id="menu.about.join" />
                 </Link>
               </li>
               <li>
-                <Link to="/about/contact">
+                <Link to="/contact">
                   <FormattedMessage id="menu.about.contact" />
                 </Link>
               </li>
@@ -86,7 +86,7 @@ const Header = ({ siteTitle, langs }) => {
                 </Link>
               </li>
               <li>
-                <Link to="/media/blog">
+                <Link to="/blog">
                   <FormattedMessage id="menu.media.blog" />
                 </Link>
               </li>
