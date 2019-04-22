@@ -45,13 +45,15 @@ const Layout = ({ children, i18nMessages }) => (
           const { langs, defaultLangKey } = data.site.siteMetadata.languages
           const langKey = getCurrentLangKey(langs, defaultLangKey, url)
           const homeLink = `/${langKey}`.replace(`/${defaultLangKey}/`, '/')
-          const langsMenu = getLangs(langs, langKey, getUrlForLang(homeLink, url)).map((item) => ({
-            ...item,
-            link: item.link.replace(`/${defaultLangKey}/`, '/'),
-          }))
+          const langsMenu = getLangs(langs, langKey, getUrlForLang(homeLink, url)).map((item) => {
+            // TODO en convert link error
+            return {
+              ...item,
+              link: item.link.replace(`/${defaultLangKey}/`, '/').replace(`//`, '/'),
+            }
+          })
 
-          console.log(langKey)
-          console.log(i18nMessages)
+          console.log(langsMenu)
 
           return (
             <IntlProvider locale={langKey} messages={i18nMessages}>

@@ -46,6 +46,8 @@
     "jsx-a11y/alt-text": 0,
     "jsx-a11y/anchor-is-valid": 0,
     "prefer-destructuring": 0,
-    "react/no-array-index-key": 0
+    "react/no-array-index-key": 0,
+    "react/require-default-props": 1,
+    "react/prop-types": 1
   }
 }
