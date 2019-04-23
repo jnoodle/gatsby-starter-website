@@ -2,6 +2,8 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../layouts/layout'
 
+// TODO i18n error
+
 export default ({ data }) => {
   const post = data.markdownRemark
   return (
